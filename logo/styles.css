@@ -1,0 +1,11 @@
+body {
+  background-color: #11B86A;
+}
+
+#logo {
+  color: #fff;
+}
+
+#initials, #full-name {
+  text-transform: capitalize;
+}
