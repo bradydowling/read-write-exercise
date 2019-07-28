@@ -1,9 +1,14 @@
+:root {
+  --primary-color: #11B86A;
+  --secondary-color: #ffffff;
+}
+
 body {
-  background-color: #11B86A;
+  background-color: var(--primary-color);
 }
 
 #logo {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 #initials, #full-name {
