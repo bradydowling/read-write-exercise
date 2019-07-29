@@ -1,16 +1,49 @@
 :root {
   --primary-color: #11B86A;
   --secondary-color: #ffffff;
+  --initials-font-size: 100px;
 }
 
 body {
   background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#logo {
+#logo-container {
+  box-sizing: border-box;
   color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  height: calc(var(--initials-font-size) * 2.5);
+  width: calc(var(--initials-font-size) * 2.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: calc(var(--initials-font-size) * 2.5);
 }
 
 #initials, #full-name {
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+#initials {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: var(--initials-font-size);
+  height: var(--initials-font-size);
+  position: relative;
+  top: calc(-1 * var(--initials-font-size) / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#full-name {
+  font-size: calc(var(--initials-font-size) / 6);
+  height: calc(var(--initials-font-size) / 6);
 }
