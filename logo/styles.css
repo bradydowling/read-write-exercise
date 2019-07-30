@@ -15,10 +15,10 @@ body {
   box-sizing: border-box;
   color: var(--secondary-color);
   border-top-width: calc(var(--initials-font-size) / 12.5);
-  border-right-width: calc(var(--initials-font-size) / 12.5);
+  border-right-width: calc(var(--initials-font-size) / 8);
   border-bottom-width: calc(var(--initials-font-size) / 100);
   border-left-width: 0px;
-  border-style: solid;
+  border-style: double;
   border-color: var(--secondary-color);
   border-radius: 50%;
   height: calc(var(--initials-font-size) * 3);
