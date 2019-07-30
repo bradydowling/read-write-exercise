@@ -1,7 +1,7 @@
 :root {
   --primary-color: #11B86A;
   --secondary-color: #ffffff;
-  --initials-font-size: 250px;
+  --initials-font-size: 200px;
 }
 
 body {
@@ -14,9 +14,9 @@ body {
 #logo-container {
   box-sizing: border-box;
   color: var(--secondary-color);
-  border-top-width: 20px;
-  border-right-width: 20px;
-  border-bottom-width: 3px;
+  border-top-width: calc(var(--initials-font-size) / 12.5);
+  border-right-width: calc(var(--initials-font-size) / 12.5);
+  border-bottom-width: calc(var(--initials-font-size) / 100);
   border-left-width: 0px;
   border-style: solid;
   border-color: var(--secondary-color);
