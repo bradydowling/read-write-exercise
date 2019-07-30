@@ -14,11 +14,12 @@ body {
 #logo-container {
   box-sizing: border-box;
   color: var(--secondary-color);
-  border: 3px solid var(--secondary-color);
+  border-width: 9px;
+  border-style: solid;
+  border-color: var(--secondary-color);
   border-radius: 50%;
   height: calc(var(--initials-font-size) * 3);
   width: calc(var(--initials-font-size) * 3);
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +27,10 @@ body {
 
 .text {
   width: calc(var(--initials-font-size) * 2.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #initials, #full-name {
@@ -36,15 +41,10 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: var(--initials-font-size);
   height: var(--initials-font-size);
-  position: relative;
-  top: calc(-1 * var(--initials-font-size) / 4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: calc(var(--initials-font-size) / 6);
 }
 
 #full-name {
   font-family: 'Passion One', cursive;
-  font-size: calc(var(--initials-font-size) / 6);
-  height: calc(var(--initials-font-size) / 6);
+  font-size: calc(var(--initials-font-size) / 5);
 }
