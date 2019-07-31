@@ -1,7 +1,7 @@
 :root {
   --primary-color: #11B86A;
   --secondary-color: #ffffff;
-  --initials-font-size: 200px;
+  --initials-font-size: 300px;
 }
 
 body {
@@ -48,6 +48,6 @@ body {
 }
 
 #full-name {
-  font-family: 'Passion One', cursive;
-  font-size: calc(var(--initials-font-size) / 5);
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: calc(var(--initials-font-size) / 7);
 }
