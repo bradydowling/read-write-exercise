@@ -1,7 +1,7 @@
 :root {
   --primary-color: #11B86A;
   --secondary-color: #ffffff;
-  --initials-font-size: 300px;
+  --initials-font-size: 200px;
 }
 
 body {
@@ -26,6 +26,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: border;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
 .text {
@@ -41,7 +49,7 @@ body {
 }
 
 #initials {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Quicksand Light', sans-serif;
   font-size: var(--initials-font-size);
   height: var(--initials-font-size);
   padding-bottom: calc(var(--initials-font-size) / 6);
@@ -50,4 +58,16 @@ body {
 #full-name {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: calc(var(--initials-font-size) / 7);
+}
+
+@keyframes border {
+  0% {
+    border-color: transparent;
+  }
+  60% {
+    border-color: transparent;
+  }
+  100%   {
+    border-color: var(--secondary-color);
+  }
 }
