@@ -1,11 +1,13 @@
 :root {
-  --primary-color: #11B86A;
-  --secondary-color: #ffffff;
+  --primary-hex: #11B86A;
+  --primary-rgba: rgba(17,184,106,1);
+  --secondary-hex: #ffffff;
+  --secondary-rgba: rgba(255,255,255,1);
   --initials-font-size: 200px;
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--primary-hex);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,20 +15,20 @@ body {
 
 #logo-container {
   box-sizing: border-box;
-  color: var(--secondary-color);
+  color: var(--secondary-hex);
   border-top-width: calc(var(--initials-font-size) / 12.5);
   border-right-width: calc(var(--initials-font-size) / 8);
   border-bottom-width: calc(var(--initials-font-size) / 100);
   border-left-width: 0px;
   border-style: double;
-  border-color: var(--secondary-color);
+  border-color: var(--secondary-hex);
   border-radius: 50%;
   height: calc(var(--initials-font-size) * 3);
   width: calc(var(--initials-font-size) * 3);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: 2s ease-in-out 3s border;
+  /* animation: 2s ease-in-out 3s border; */
 }
 
 .text {
@@ -49,8 +51,13 @@ body {
 }
 
 #full-name {
+  color: transparent;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: calc(var(--initials-font-size) / 7);
+  animation-name: slidein;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
 }
 
 @keyframes border {
@@ -61,6 +68,72 @@ body {
     border-color: transparent;
   }
   100%   {
-    border-color: var(--secondary-color);
+    border-color: var(--secondary-hex);
+  }
+}
+
+@keyframes slidein {
+  0% {
+    background: transparent;
+  }
+  5% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 10%, var(--primary-rgba) 10% var(--primary-rgba) 100%); 
+  }
+  10% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 20%, var(--primary-rgba) 20% var(--primary-rgba) 100%); 
+  }
+  15% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 30%, var(--primary-rgba) 30% var(--primary-rgba) 100%); 
+  }
+  20% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 40%, var(--primary-rgba) 40% var(--primary-rgba) 100%); 
+  }
+  25% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 50%, var(--primary-rgba) 50% var(--primary-rgba) 100%); 
+  }
+  30% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 60%, var(--primary-rgba) 60% var(--primary-rgba) 100%); 
+  }
+  35% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 70%, var(--primary-rgba) 70% var(--primary-rgba) 100%); 
+  }
+  40% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 80%, var(--primary-rgba) 80% var(--primary-rgba) 100%); 
+  }
+  45% {
+    background: linear-gradient(90deg, var(--secondary-rgba) 0%, var(--secondary-rgba) 90%, var(--primary-rgba) 90% var(--primary-rgba) 100%); 
+  }
+  50% {
+    background: var(--secondary-hex);
+  }
+  55% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 10%, var(--secondary-rgba) 10% var(--secondary-rgba) 100%); 
+  }
+  60% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 20%, var(--secondary-rgba) 20% var(--secondary-rgba) 100%); 
+  }
+  65% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 30%, var(--secondary-rgba) 30% var(--secondary-rgba) 100%); 
+  }
+  70% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 40%, var(--secondary-rgba) 40% var(--secondary-rgba) 100%); 
+  }
+  75% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 50%, var(--secondary-rgba) 50% var(--secondary-rgba) 100%); 
+  }
+  80% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 60%, var(--secondary-rgba) 60% var(--secondary-rgba) 100%); 
+  }
+  85% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 70%, var(--secondary-rgba) 70% var(--secondary-rgba) 100%); 
+  }
+  90% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 80%, var(--secondary-rgba) 80% var(--secondary-rgba) 100%); 
+  }
+  95% {
+    background: linear-gradient(90deg, var(--primary-rgba) 0%, var(--primary-rgba) 90%, var(--secondary-rgba) 90% var(--secondary-rgba) 100%); 
+  }
+  100%   {
+    background: transparent;
   }
 }
