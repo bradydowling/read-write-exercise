@@ -19,7 +19,7 @@ body {
   border-bottom-width: calc(var(--initials-font-size) / 100);
   border-left-width: 0px;
   border-style: double;
-  border-color: var(--secondary-hex);
+  border-color: transparent;
   border-radius: 50%;
   height: calc(var(--initials-font-size) * 3);
   width: calc(var(--initials-font-size) * 3);
