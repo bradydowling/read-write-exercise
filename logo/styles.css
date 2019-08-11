@@ -52,15 +52,15 @@ body {
 
 .letter:nth-of-type(1) {
   color: transparent;
-  animation: 1s cursor-blink step-end 1s, 0s show-text step-end 1s forwards;
+  animation: 1s cursor-blink-start step-end 0s, 1s cursor-blink step-end .75s, 0s show-text step-end .75s forwards;
 }
 .letter:nth-of-type(2) {
   color: transparent;
-  animation: 1s cursor-blink step-end 2s, 1s show-text step-end 1s forwards;
+  animation: 1s cursor-blink step-end 1.5s, 0s show-text step-end 1.5s forwards;
 }
 .letter:nth-of-type(3) {
   color: transparent;
-  animation: 1s cursor-blink step-end 3s, 2s show-text step-end 1s forwards;
+  animation: 1s cursor-blink step-end infinite 2.25s, 0s show-text step-end 2.25s forwards;
 }
 
 @keyframes show-text {
@@ -76,6 +76,17 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 220px;
     background: linear-gradient(90deg, transparent 0%, transparent 98%, var(--secondary-hex) 98%, var(--secondary-hex) 100%);
+  }
+  50% {
+    background: transparent;
+  }
+}
+
+@keyframes cursor-blink-start {
+  from, to {
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+    background: linear-gradient(90deg, var(--secondary-hex) 0%, var(--secondary-hex) 2px, transparent 2px, transparent 100%);
   }
   50% {
     background: transparent;
