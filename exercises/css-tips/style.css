@@ -1,0 +1,16 @@
+div {
+  border: 10px solid red;
+  padding: 25px;
+}
+
+.grandparent {
+  border-color: blue;
+}
+
+.grandparent .child {
+  border-color: green;
+}
+
+.grandparent > .child {
+  border-color: purple;
+}
