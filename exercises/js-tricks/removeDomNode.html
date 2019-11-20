@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myId">This is gonna be some content</div>
+    <button onclick="removeNode()">Click me!</button>
+    <script>
+        function removeNode() {
+            const myDiv = document.getElementById("myId");
+            const parent = myDiv.parentNode;
+            parent.removeChild(myDiv);
+            console.log("should have removed!");
+        }
+    </script>
+</body>
+</html>
