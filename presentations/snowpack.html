@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Snowpack</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Build web applications with less tooling and 10x faster iteration.">
+		<meta name="author" content="Brady Dowling">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -39,68 +39,69 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+			<div class="slides" style="text-align: left;">
 				<section>
 					<h1>Snowpack</h1>
-					<h3>Build web applications with less tooling and 10x faster iteration</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+                <section>
+                    <h2>What it bundles</h2>
+                    <p class="fragment">Dependencies (only ESM)</p>
+                    <p class="fragment">(not your source code, images, or .css)</p>
+                </section>
+
 				<section>
-					<section>
-						<h2>Bundle After Each Module Install</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+                    <h2>When to bundle</h2>
+                    <p class="fragment">After each time you install a package</p>
+                    <p class="fragment">
+                        <code>$ npm install my-package</code>
+                    </p>
+                    <p class="fragment">
+                        <code>$ npx snowpack</code>
+                    </p>
                 </section>
 
                 <section>
-					<section>
-						<h2>Bundles Modules Independently</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                    <section>
+                        <h2>How it bundles</h2>
+                        <p class="fragment">Bundles modules independently</p>
+                    </section>
+                    <section>
+                        <img src="./img/snowpack-bundling.png" alt="" srcset="">
+                    </section>
+                    <section>
+                        <h2>Webpack</h2>
+                        <img class="fragment" src="./img/webpack-bundling.png" alt="" srcset="">
+                    </section>
+                </section>
 
-                <section style="text-align: left;">
-					<h1>Snowpack Walkthrough</h1>
-					<p>Let's write code</p>
+                <section>
+                    <h2>Why Snowpack</h2>
+                    <p class="fragment">Better development flow</p>
+                    <p class="fragment">Caching</p>
+                </section>
+
+                <section>
+					<h2>Walkthrough</h2>
+                </section>
+                
+                <section>
+                    <h2>Notes on Snowpack</h2>
+                    <ul>
+                        <li>Web/development server sold separately</li>
+                        <li>Babel support configurable</li>
+                        <li>Doesn't include CSS/image import support</li>
+                        <li>Only supports ES modules</li>
+                        <li>China mobile browser not supported</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>When I'd Use It</h2>
+                    <ul>
+                        <li>Side projects</li>
+                        <li>Using purely ES modules</li>
+                    </ul>
 				</section>
 
 			</div>
